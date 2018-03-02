@@ -15,7 +15,12 @@
 		Settings
 		<br/>
 		<br/>
-		<input type="checkbox" id="permitPushNotifs" /><label for="permitPushNotifs">Allow Push Notifications</label>
+		<form id="settingsForm" method="POST" enctype="application/x-www-form-urlencoded" action="">
+			<input type="checkbox" id="permitPushNotifs" /><label for="permitPushNotifs">Allow Push Notifications</label>
+			<br/>
+			<br/>
+			<input type="submit" id="submitButton" name="submitButton" value="Update" /> 
+		</form>
 		<br/>
 		<br/>
 		<a href="home.html">Home</a>

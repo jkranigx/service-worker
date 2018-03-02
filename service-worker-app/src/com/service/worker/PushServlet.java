@@ -113,11 +113,13 @@ public class PushServlet extends HttpServlet {
 			
 			if (request.getServletPath().equalsIgnoreCase(addPath)) {
 
-				success = addPushSubscription(pushSubscription);
+				addPushSubscription(pushSubscription);
+				success = true;
 				
 			} else if (request.getServletPath().equalsIgnoreCase(removePath)) {
 				
-				success = removePushSubscription(pushSubscription);
+				removePushSubscription(pushSubscription);
+				success = true;
 			} 
 			
 		} catch (Exception exception) {
