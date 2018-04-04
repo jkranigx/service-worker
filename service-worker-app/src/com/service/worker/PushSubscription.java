@@ -13,7 +13,7 @@ public class PushSubscription implements Serializable {
 	private final String 	endPoint;
 	private final Date  	expirationTime;
 	private final String	p256dhKey;
-	private final String    authKey;
+	private final String    authKey; // authentication secret.
 	
 	
 	public PushSubscription(String endPoint, Date expirationTime,
